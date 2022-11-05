@@ -1,0 +1,23 @@
+{
+  "name": "adopt_a_tree",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./assets/scss/main.scss ./assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaciejMogilewski/adopt-a-tree.git"
+  },
+  "author": "Maciej Mogilewski",
+  "license": "Beerware",
+  "bugs": {
+    "url": "https://github.com/MaciejMogilewski/adopt-a-tree/issues"
+  },
+  "homepage": "https://github.com/MaciejMogilewski/adopt-a-tree#readme",
+  "devDependencies": {
+    "sass": "^1.56.0"
+  }
+}
