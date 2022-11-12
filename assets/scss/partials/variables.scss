@@ -114,6 +114,11 @@ $btn-padding-h: $spacing-3;
 $btn-padding-h-sm: math.div($spacing-3, 2);
 $btn-padding-h-xs: math.div($spacing-3, 2);
 
+//--------------------
+// VARIABLES: Inputs
+$color-input-border: $gray-cloud;
+$color-input-placeholder: $gray-titanium;
+
 // VARIABLES: Box shadow
 
 $box-shadow: 0 toRem(4px) toRem(10px) rgba($black, 0.1);
