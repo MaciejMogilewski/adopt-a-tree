@@ -4,6 +4,7 @@
 
 @import "partials/functions";
 @import "partials/variables";
+@import "./partials/mixins";
 
 // Variables: Style Guide: Sidebar
 $styleguide-sidebar-width: toRem(200px);
@@ -262,3 +263,19 @@ ul > li {
 ul {
     padding-left: 0;
 }
+
+
+.styleguide {
+    background: silver;
+    transition: all 3s;
+    @include mq(smi) {
+        background: red;
+    }
+    @include mq(md) {
+        background: gold;
+    }
+    @include mq(lg) {
+        background: green;
+    }
+}
+
