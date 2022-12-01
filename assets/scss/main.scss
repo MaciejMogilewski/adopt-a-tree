@@ -11,7 +11,8 @@
 @import './partials/forms';
 @import './partials/components';
 @import './partials/libs/glider';
-@import './partials/glider-overriders';
+@import 'partials/glider-overrides';
 @import './partials/tabby';
 
 @import './partials/main';
+@import 'customs-styles';
