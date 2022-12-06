@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="assets/js/libs/tabby.js"></script>
+    <script src="assets/js/input-file-custom.js"></script>
 </head>
 <body>
 
@@ -361,6 +362,105 @@
                         </li>
                     </ul>
 
+            </div>
+            <div class="spacing-2 icon-size-xxl flex white-bg">
+                <span class="at-icon-home spacing-3-r gray-titanium margin-right-auto"></span>
+                <span class="at-icon-leaf spacing-3-r spacing-3-l gray-titanium margin-right-auto margin-left-auto"></span>
+                <span class="at-icon-cart spacing-3-r spacing-3-l gray-titanium margin-right-auto margin-left-auto"></span>
+                <span class="at-icon-user spacing-3-l gray-lead margin-left-auto"></span>
+            </div>
+            <br>
+            <div class="spacing-2 brand-1-bg">
+                <div class="row flex flex-wrap">
+                    <div class="col col-6 spacing-l">
+                        <img src="assets/svg/logos/logo-white.svg" alt="Logo: Adopt-a-Tree" width="36" height="36" role="img">
+                    </div>
+                </div>
+                <div class="avatar text-center white spacing-3-b">
+                    <img src="assets/img/avatar/avatar-user.jpg" alt="Jenn Davis" width="144" height="144" class="avatar-img">
+                    <div class="avatar-username">Jenn Davis</div>
+                    <div class="avatar-meta-info">
+                        <div class="spacing-b">4 Projects / 212 Trees</div>
+                        <div class="font-size-sm">Treehugger since Mar 10, 2017</div>
+                    </div>
+                </div>
+            </div>
+            <div class="spacing-2-t spacing-2-r spacing-2-l spacing-3-b white-bg">
+                <ul class="tab-block flex-justify-center spacing-2-b" data-tabs="">
+                    <li class="tab-each">
+                        <a href="#tab-projects5" class="tab-each-anchor" data-tabby-default="">
+                            <span class="at-icon-leaf icon-left-lg" aria-hidden="true"></span>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li class="tab-each">
+                        <a href="#tab-payment5" class="tab-each-anchor">
+                            <span class="at-icon-card icon-left-lg" aria-hidden="true"></span>
+                            <span>Payment</span>
+                        </a>
+                    </li>
+                    <li class="tab-each">
+                        <a href="#tab-profil5" class="tab-each-anchor">
+                            <span class="at-icon-user icon-left-lg" aria-hidden="true"></span>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div id="tab-projects5" class="spacing-v">
+                    Content: Projects
+                </div>
+                <div id="tab-payment5" class="spacing-v">
+                    Content: Payment
+                </div>
+                <div id="tab-profile5" class="spacing-v">
+                    Content: Profile
+                </div>
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        var tabs = new Tabby('[data-tabs]');
+                    });
+                </script>
+                <div class="field spacing-2-t spacing-2-b text-center margin-reset">
+                    <input type="file" accept="image/*" id="js-demo-input-file" class="input-file">
+                    <label for="js-demo-input-file" class="btn btn--brand-1 input-file-label">
+                        <img src="assets/img/avatar/avatar-user.jpg" alt="" class="input-file-img" id="js-demo-input-file-image" width="44" height="44" role="img">Upload Photo
+                    </label>
+                </div>
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        document.getElementById("js-demo-input-file").addEventListener("change", function() {
+                            readURL(this, "js-demo-input-file-image");
+                        });
+                    });
+                </script>
+                <div>
+                    <div class="field spacing-2-b margin-reset">
+                        <div class="input-group">
+                            <input type="text" class="input-group-text" placeholder="" id="demo-input-label-group2">
+                            <label for="demo-input-label-group2" class="input-group-label font-size-xs input-group-text text-right">First Name</label>
+                        </div>
+                    </div>
+                    <div class="field spacing-2-b margin-reset">
+                        <div class="input-group">
+                            <input type="text" class="input-group-text" placeholder="" id="demo-input-label-group3">
+                            <label for="demo-input-label-group3" class="input-group-label font-size-xs input-group-text text-right">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="field spacing-2-b margin-reset">
+                        <div class="input-group">
+                            <input type="email" class="input-group-text" placeholder="" id="demo-input-label-group4">
+                            <label for="demo-input-label-group4" class="input-group-label font-size-xs input-group-text text-right">Email ID</label>
+                        </div>
+                    </div>
+                    <div class="field margin-reset">
+                        <textarea class="form-text" id="demo-textarea-default" placeholder=""></textarea>
+                        <label for="demo-textarea-default" class="input-group-label"></label>
+                    </div>
+                    <button class="btn btn--brand-2 full-width" tabindex="0" role="button">Save Changes</button>
+                </div>
             </div>
             <div class="spacing-2 icon-size-xxl flex white-bg">
                 <span class="at-icon-home spacing-3-r gray-titanium margin-right-auto"></span>
